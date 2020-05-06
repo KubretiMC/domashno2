@@ -1,0 +1,10 @@
+package fitness;
+
+public class Spectator {
+	private String training;
+	
+	public void setTraining(String training)
+	{
+		this.training=training;
+	}
+}

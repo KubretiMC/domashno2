@@ -1,0 +1,15 @@
+package fitness;
+
+public class GetUp implements Command {
+
+	private TrPerson trPerson;
+	
+	public GetUp(TrPerson trPerson) {
+		this.trPerson=trPerson;
+	}
+	@Override
+	public void execute() {
+		trPerson.setTraining("Get up");
+	}
+
+}

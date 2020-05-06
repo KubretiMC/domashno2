@@ -1,0 +1,27 @@
+package fitness;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Instructor instructor =new Instructor();
+		TrPerson trPerson = new TrPerson();
+		
+		Viewer viewer1 = new Viewer();
+		Viewer viewer2 = new Viewer();
+		Viewer viewer3 = new Viewer();
+		
+		trPerson.subscribe(viewer1);
+		trPerson.subscribe(viewer2);
+		trPerson.subscribe(viewer3);
+		
+		Command changeTrainingToLieDown = new LieDown(trPerson);
+		Command changeTrainingToGetUp = new StandUp(trPerson);
+		
+		instructor.setCommand(changeTrainingToLieDown);
+		instructor.changeExercise();
+		
+		instructor.setCommand(changeTrainingToGetUp);
+		instructor.changeExercise();
+	}
+
+}

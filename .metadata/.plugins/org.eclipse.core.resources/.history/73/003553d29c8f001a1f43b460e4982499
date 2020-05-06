@@ -1,0 +1,15 @@
+package fitness;
+
+public class StandUp implements Command {
+
+	private Trainee trPerson;
+	
+	public StandUp(Trainee trPerson) {
+		this.trPerson=trPerson;
+	}
+	@Override
+	public void execute() {
+		trPerson.setTraining("Get up");
+	}
+
+}

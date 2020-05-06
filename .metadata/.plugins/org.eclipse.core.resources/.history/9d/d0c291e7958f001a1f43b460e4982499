@@ -1,0 +1,16 @@
+package fitness;
+
+public class LieDown implements Command {
+
+	private TrPerson trPerson;
+	
+	public getUp(TrPerson trPerson) {
+		this.trPerson=trPerson);
+	}
+	@Override
+	public void execute() {
+		trPerson.setTraining("Lie down");
+	}
+}
+
+
